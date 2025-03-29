@@ -22,12 +22,17 @@
         </div>
 
         <form id="taskForm">  
-            <input type="text" id="taskInput" placeholder="Write your task" required>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Write your task" required/>
+                <img src="voice.png" alt="Voice Command" class="voice-icon">
+            </div>
             <button type="submit" id="newTask">+</button>  
         </form>
+        
 
         <ul id="task-list"></ul>  
     </div>
     <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>

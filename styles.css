@@ -10,6 +10,7 @@
     --text: #fff;
     --purple: #828dff;
     --teal: #24feee;
+    --lightpurple: #7982e4af;
 }
 
 body {
@@ -128,7 +129,7 @@ button:hover {
 }
 
 .taskItem:hover {
-    background: var(--purple);
+    background: var(--lightpurple);
 }
 
 .task {
@@ -153,4 +154,43 @@ button:hover {
     margin: 0 10px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.voice-command {
+    position: absolute;
+    right: 10px;
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    cursor: pointer;
+}
+.input-container img{
+    /* width: 34px;
+    height: 34px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white; */
+
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid purple;
+    background: transparent;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
